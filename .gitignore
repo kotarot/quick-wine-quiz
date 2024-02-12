@@ -172,3 +172,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+################
+# Application
+################
+
+quiz/questions.json
