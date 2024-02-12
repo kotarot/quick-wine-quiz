@@ -36,6 +36,7 @@ html, body {
   background-color: #ddd;
   border-radius: 0;
   /* text-transform: uppercase; */
+  text-align: left;
   white-space: normal !important;
   max-width: 250px;
   width: 250px;

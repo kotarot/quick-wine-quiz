@@ -188,8 +188,8 @@ var $indicators = $('<ol>')
           title: "Drat",
           text: (
             "Nope, not quite right!<br/><br/>" +
-            "The correct answer was \"" +
-            question.answers[question.correct.index] + "\"." + (
+            "The correct answer was <strong>\"" +
+            question.answers[question.correct.index] + "\"</strong>." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +
