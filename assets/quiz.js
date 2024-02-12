@@ -175,7 +175,7 @@ var $indicators = $('<ol>')
       if (correct) {
         opts = $.extend(opts, {
           title: "Nice!",
-          text: "Well done" + (
+          text: "Well done." + (
             question.correct.text ?
             ("<div class=\"correct-text\">" +
               question.correct.text +
@@ -223,8 +223,8 @@ var $indicators = $('<ol>')
               Math.round(100*(state.correct/state.total)) +
               "% of the questions correct!"
             );
-            $twitter_link.attr('href', tweet(state, quiz_opts));
-            $facebook_link.attr('href', facebook(state, quiz_opts));
+            // $twitter_link.attr('href', tweet(state, quiz_opts));
+            // $facebook_link.attr('href', facebook(state, quiz_opts));
             $indicators.removeClass('show');
             // indicate the question number
             $indicators.find('li')
