@@ -1,10 +1,6 @@
-# Quick quiz generator
+# Quick Wine Quiz
 
-## Example
-
-See an [example quiz](http://urbaninstitute.github.io/quick-quiz/)
-
-## Usage
+## Original Usage
 
 First, create a quiz text file using the following format (named `unicorns.quiz` for example)
 
