@@ -28,7 +28,10 @@
   <script src="assets/quiz.js"></script>
   <script>
     $(function() {
-      $('#quiz').quiz("https://quick-wine-quiz.s3.amazonaws.com/questions.json");
+      // debug
+      // $("#quiz").quiz("quiz/questions.json");
+      // production
+      $("#quiz").quiz("https://quick-wine-quiz.s3.amazonaws.com/questions.json");
     });
   </script>
 </body>

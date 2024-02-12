@@ -88,7 +88,7 @@ var $indicators = $('<ol>')
       $indicators.addClass('show');
 
     $(".active .quiz-button.btn").each(function(){
-      console.log(this.getBoundingClientRect())
+      // console.log(this.getBoundingClientRect())
       $(this).css("margin-left", function(){
         return ((250 - this.getBoundingClientRect().width) *0.5) + "px"
       })
@@ -163,6 +163,7 @@ var $indicators = $('<ol>')
 
       // default opts for both outcomes
       var opts = {
+        // SweetAlertのオーバーレイ部分のクリックを無効化
         allowOutsideClick : false,
         allowEscapeKey : false,
         confirmButtonText: "Next Question",
@@ -245,7 +246,8 @@ var $indicators = $('<ol>')
         // advance to next question on OK click or
         // click of overlay
         swal(opts, next);
-        $('.sweet-overlay').on('click', next);
+        // SweetAlertのオーバーレイ部分のクリックを無効化するには以下の行をコメントアウトする
+        // $('.sweet-overlay').on('click', next);
 
       });
 
