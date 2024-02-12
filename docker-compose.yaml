@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: "quick-wine-quiz"
+    hostname: "quick-wine-quiz-server"
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8080:80
+    networks:
+      - default
