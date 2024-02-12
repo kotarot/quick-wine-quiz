@@ -273,18 +273,18 @@ var $indicators = $('<ol>')
     .attr("class", "quiz-answers")
     .appendTo($results_slide);
 
-  var $social = $("<div>")
-    .attr('class', 'results-social')
-    .html('<div id = "social-text">Did you like the quiz? Share your results with your friends, so they can give it a shot!</div>')
-    .appendTo($results_slide);
+  // var $social = $("<div>")
+  //   .attr('class', 'results-social')
+  //   .html('<div id = "social-text">Did you like the quiz? Share your results with your friends, so they can give it a shot!</div>')
+  //   .appendTo($results_slide);
 
-  var $twitter_link = $('<a>')
-    .html('<span class="social social-twitter follow-tw"></span>')
-    .appendTo($social);
+  // var $twitter_link = $('<a>')
+  //   .html('<span class="social social-twitter follow-tw"></span>')
+  //   .appendTo($social);
 
-  var $facebook_link = $('<a>')
-    .html('<span class="social social-facebook follow-fb"></span>')
-    .appendTo($social);
+  // var $facebook_link = $('<a>')
+  //   .html('<span class="social social-facebook follow-fb"></span>')
+  //   .appendTo($social);
 
   $("<button>")
     .attr('class', 'quiz-button btn')

@@ -15,7 +15,7 @@ html, body {
 }
 
 .quiz-answers {
-  text-align: center;
+  /* text-align: center; */
   width: 250px;
   margin: 0 auto;
   display: block;
@@ -35,7 +35,7 @@ html, body {
   margin-top: 10px;
   background-color: #ddd;
   border-radius: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   white-space: normal !important;
   max-width: 250px;
   width: 250px;
@@ -177,11 +177,11 @@ html, body {
 }
 
 
-
 .sweet-alert {
-      margin-top: -251px !important;
-      position: absolute;
-  }
+  margin-top: -251px !important;
+  position: absolute;
+  font-family: 'M PLUS 1', sans-serif;
+}
 
 
 @media (max-width: 540px){
