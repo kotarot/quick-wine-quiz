@@ -4,6 +4,8 @@
 
 ## Architecture
 
+![Architecture](draw.io/quick-wine-quiz.png)
+
 ## Development
 
 ```bash
