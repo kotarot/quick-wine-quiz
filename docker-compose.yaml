@@ -9,5 +9,9 @@ services:
       dockerfile: ./docker/Dockerfile
     ports:
       - 8080:80
+    volumes:
+      - ./index.html:/usr/local/apache2/htdocs/index.html
+      - ./assets:/usr/local/apache2/htdocs/assets
+      - ./quiz:/usr/local/apache2/htdocs/quiz
     networks:
       - default
