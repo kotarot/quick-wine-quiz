@@ -28,10 +28,13 @@
   <script src="assets/quiz.js"></script>
   <script>
     $(function() {
-      // debug
-      // $("#quiz").quiz("quiz/questions.json");
-      // production
-      $("#quiz").quiz("https://quick-wine-quiz.s3.amazonaws.com/questions.json");
+      if ((location.hostname == "localhost") || (location.hostname == "127.0.0.1")) {
+        // debug
+        $("#quiz").quiz("quiz/questions.json");
+      } else {
+        // production
+        $("#quiz").quiz("https://quick-wine-quiz.s3.amazonaws.com/questions.json");
+      }
     });
   </script>
 </body>

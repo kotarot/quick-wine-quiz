@@ -178,4 +178,4 @@ cython_debug/
 # Application
 ################
 
-quiz/questions.json
+# quiz/questions.json
