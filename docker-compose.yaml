@@ -10,8 +10,6 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./index.html:/usr/local/apache2/htdocs/index.html
-      - ./assets:/usr/local/apache2/htdocs/assets
-      - ./quiz:/usr/local/apache2/htdocs/quiz
+      - ./docs:/usr/local/apache2/htdocs
     networks:
       - default

@@ -1,8 +1,16 @@
 # Quick Wine Quiz
 
+(Forked from [UrbanInstitute/quick-quiz](https://github.com/UrbanInstitute/quick-quiz))
+
 ## Architecture
 
-## Setup
+## Development
+
+```bash
+docker compose up
+```
+
+## Cloud Setup
 
 ### 1. SES (Simple Email Service)
 
