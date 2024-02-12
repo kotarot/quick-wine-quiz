@@ -1,6 +1,6 @@
 html, body {
   width: 100%;
-  font-family: Lato;
+  font-family: 'M PLUS 1', sans-serif;
 }
 
 .quiz-question {
@@ -27,7 +27,7 @@ html, body {
 }
 
 .sweet-alert button {
- border-radius: 0;
+  border-radius: 0;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -85,12 +85,12 @@ html, body {
   margin: 0 auto;
 }
 .results-social{
- display: table;
+  display: table;
 }
 .correct-text {
   margin-top: 10px;
-  font-style: italic;
-  font-family: Georgia, serif;
+  /* font-style: italic;
+  font-family: Georgia, serif; */
 }
 
 .quiz-title {
@@ -124,7 +124,7 @@ html, body {
   position: relative;
   padding: 0;
   margin: 0;
-/*  left: 40px;*/
+  /* left: 40px; */
     margin-left: auto;
     margin-right: auto;
   top: 40px;
@@ -136,7 +136,7 @@ html, body {
 }
 
 .show{
- display:table !important;
+  display:table !important;
 }
 
 .progress-circles li{
@@ -162,7 +162,7 @@ html, body {
   width: 32px;
 }
 .follow-tw:hover{
- background-position: 0 -1401px;
+  background-position: 0 -1401px;
 }
 .follow-fb {
   display: inline-block;
@@ -173,7 +173,7 @@ html, body {
   width: 32px;
 }
 .follow-fb:hover{
- background-position: 0 -1433px;
+  background-position: 0 -1433px;
 }
 
 
@@ -185,14 +185,14 @@ html, body {
 
 
 @media (max-width: 540px){
-.quiz-question{
-  font-size: 20px;
-}
-.sweet-alert {
-      margin-top: -251px !important;
-      position: absolute;
+  .quiz-question{
+    font-size: 20px;
   }
-.sweet-alert h2{
-  display: none;
-}
+  .sweet-alert {
+        margin-top: -251px !important;
+        position: absolute;
+    }
+  .sweet-alert h2{
+    display: none;
+  }
 }
