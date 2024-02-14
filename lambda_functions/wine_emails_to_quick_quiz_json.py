@@ -120,23 +120,32 @@ def lambda_handler(event, context):
         print("quiz_id:", quiz_id)
 
         # 問題文、選択肢、正解
-        lines = body_text.split("\n")
         question = ""
         options: list[str] = []
         answer = ""
         during_question = False
+
+        lines = body_text.split("\n")
         for line in lines:
-            if line.startswith("● 問題:"):
+            # 引用符を削除
+            # TODO: 多重引用の場合は対応できていない
+            line = line.replace(">", "").strip()
+
+            # 環境によって "●" のエンコーディングが異なるので、記号を使わない文字列でマッチングさせる
+            if "問題: " in line:
                 during_question = True
             if line.startswith("1:") or line.startswith("2:") or line.startswith("3:") or line.startswith("4:"):
                 during_question = False
                 options.append(line.strip())
-            if line.startswith("● 正解:"):
+            if "正解: " in line:
                 during_question = False
                 answer = int(line.strip().split(" ")[-1])
 
             if during_question:
-                question += line.replace("● 問題:", "").strip()
+                if "問題: " in line:
+                    question += line.strip().split("問題: ")[-1].strip()
+                else:
+                    question += line.strip()
 
         print("question:", question)
         print("options:", options)
